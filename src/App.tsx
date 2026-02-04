@@ -1,4 +1,4 @@
-import React from 'react';
+
 import Profile from './components/Profile';
 import LinkButton from './components/LinkButton';
 import SocialIcons from './components/SocialIcons';
