@@ -10,7 +10,7 @@ const Profile = () => {
                 </Avatar>
             </div>
             
-            <h1 className="text-3xl font-black mb-2 text-transparent bg-clip-text bg-gradient-to-r from-foreground via-foreground/80 to-foreground/50 drop-shadow-sm fade-in delay-200">
+            <h1 className="text-3xl font-black mb-2 text-transparent bg-clip-text bg-gradient-to-r from-gray-900 via-gray-700 to-gray-500 dark:from-white dark:via-gray-200 dark:to-gray-400 drop-shadow-sm fade-in delay-200">
                 John Doe
             </h1>
             

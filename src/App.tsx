@@ -16,18 +16,22 @@ function App() {
   ];
 
   return (
-    <div className="relative min-h-screen flex items-center justify-center p-4 overflow-hidden bg-background selection:bg-purple-500/30 transition-colors duration-300">
+    <div className="relative min-h-screen flex items-center justify-center p-4 overflow-hidden bg-gray-50 dark:bg-black transition-colors duration-300">
         
-        {/* Background Blobs (Visible in Dark Mode mainly, but kept for vibe) */}
-        <div className="blob bg-purple-600 w-96 h-96 rounded-full top-0 left-[-100px] mix-blend-multiply filter blur-3xl opacity-20 dark:mix-blend-screen dark:opacity-40 animate-blob"></div>
-        <div className="blob bg-cyan-600 w-96 h-96 rounded-full bottom-0 right-[-100px] mix-blend-multiply filter blur-3xl opacity-20 dark:mix-blend-screen dark:opacity-40 animate-blob animation-delay-2000"></div>
+        {/* Background Blobs */}
+        <div className="blob bg-purple-400/30 w-96 h-96 rounded-full top-0 left-[-100px] mix-blend-multiply filter blur-3xl opacity-50 dark:mix-blend-screen dark:bg-purple-600 dark:opacity-40 animate-blob"></div>
+        <div className="blob bg-cyan-400/30 w-96 h-96 rounded-full bottom-0 right-[-100px] mix-blend-multiply filter blur-3xl opacity-50 dark:mix-blend-screen dark:bg-cyan-600 dark:opacity-40 animate-blob animation-delay-2000"></div>
 
         {/* Toggle Button */}
         <div className="absolute top-4 right-4 z-50">
             <ModeToggle />
         </div>
 
-      <div className="glass-container w-full max-w-lg rounded-3xl p-1 flex flex-col relative z-10 border border-border shadow-2xl fade-in overflow-hidden bg-background/50 backdrop-blur-md">
+      <div className="glass-container w-full max-w-lg rounded-3xl p-1 flex flex-col relative z-10 
+        border border-gray-200 dark:border-white/10 
+        shadow-2xl shadow-gray-200/50 dark:shadow-none
+        fade-in overflow-hidden 
+        bg-white/60 dark:bg-black/60 backdrop-blur-xl">
         <ScrollArea className="h-[85vh] w-full p-6">
             <Profile />
             
